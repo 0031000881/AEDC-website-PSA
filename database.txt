@@ -1,0 +1,12 @@
+-- Create the database if it does not exist
+CREATE DATABASE IF NOT EXISTS workhohas1;
+USE workhohas1;
+
+-- Create the table
+CREATE TABLE IF NOT EXISTS workhohas1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
